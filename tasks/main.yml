@@ -15,7 +15,8 @@
 
 - name: Ansible-Container | Install
   pip:
-    name: ansible-container["{{ container_engine }}"]
+    name: "ansible-container[{{ item }}]"
+  with_items: "{{ container_engines }}"
   tags:
     - ansible
     - container

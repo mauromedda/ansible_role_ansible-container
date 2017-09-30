@@ -1,4 +1,5 @@
 ---
 # defaults file for ansible_role_ansible-container
 
-container_engine: "docker"
+container_engines: 
+  - docker
