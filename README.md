@@ -11,6 +11,22 @@ Requirements
   - Python pip
 
 
+Variables
+---------
+
+Look for the variable in [`defaults/main.yml`](defaults/main.yml)
+
+
+  * container_engine: "docker"
+
+Ansible Container relies upon supported container engines for building, running, and deploying your project.
+When you install Ansible Container, you must specify which engines you want your installation to support.
+Currently supported engines are:
+  - docker
+  - k8s
+  - openshift.
+
+
 Example Playbook
 ----------------
 
@@ -21,7 +37,6 @@ Example Playbook
   connection: local
 
   roles:
-    - mauromedda.ansible_role_pip
     - mauromedda.ansible_role_ansible-container
 ```
 
