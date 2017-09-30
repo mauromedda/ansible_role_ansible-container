@@ -1,5 +1,12 @@
 ---
 # tasks file for ansible_role_ansible-container
+- name: Ansible-Container | Upgrade pip and setuptools
+  pip:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - pip
+    - setuptools
 
 - name: Ansible-Container | Install
   pip:
