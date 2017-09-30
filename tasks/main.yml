@@ -7,6 +7,11 @@
   with_items:
     - pip
     - setuptools
+  tags:
+    - ansible
+    - container
+    - install
+    - skip_ansible_lint
 
 - name: Ansible-Container | Install
   pip:
