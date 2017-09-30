@@ -1,0 +1,17 @@
+galaxy_info:
+  author: Mauro Medda
+  description: An Ansible role install Ansible-Container
+
+  license: BSD
+
+  min_ansible_version: 2.2
+
+  platforms:
+  - name: EL
+    versions:
+    - 7
+
+  galaxy_tags: [ "RedHat", "CentOS", "ansible", "ansible-container" ]
+
+dependencies:
+  - mauromedda.ansible_role_pip

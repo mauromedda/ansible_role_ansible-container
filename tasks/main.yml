@@ -1,0 +1,10 @@
+---
+# tasks file for ansible_role_ansible-container
+
+- name: Ansible-Container | Install
+  pip:
+    name: ansible-container
+  tags:
+    - ansible
+    - container
+    - install
